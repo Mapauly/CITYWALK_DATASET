@@ -1,7 +1,7 @@
 import csv
 
 # 定义关键字列表
-keywords = ["夜", "路线"]
+keywords = [ "路线","机位","吃","周末","夜","咖啡","博物馆","情侣","游客","亲子","寺"]
 
 # 初始化分类字典，每个关键字对应一个空列表
 classified_data = {keyword: [] for keyword in keywords}
