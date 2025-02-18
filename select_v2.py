@@ -60,7 +60,7 @@ for main_tag, sub_tags in tag_system.items():
 
 # 读取 CSV 文件
 try:
-    with open('cleaned_notes.csv', 'r', encoding='utf-8') as csvfile:
+    with open('qwen_cleaned_notes.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         # 获取 CSV 文件的字段名
         fieldnames = reader.fieldnames
@@ -98,4 +98,4 @@ try:
     print(f"分类结果已保存到 {filename}")
 
 except FileNotFoundError:
-    print("未找到 'cleaned_notes.csv' 文件，请检查文件路径。")
+    print("未找到 'qwen_cleaned_notes.csv' 文件，请检查文件路径。")
