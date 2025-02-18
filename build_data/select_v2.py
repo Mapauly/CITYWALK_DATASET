@@ -60,7 +60,7 @@ for main_tag, sub_tags in tag_system.items():
 
 # 读取 CSV 文件
 try:
-    with open('data/qwen_cleaned_notes.csv', 'r', encoding='utf-8') as csvfile:
+    with open('../data/qwen_cleaned_notes.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         # 获取 CSV 文件的字段名
         fieldnames = reader.fieldnames
@@ -88,7 +88,7 @@ try:
                 classified_data.setdefault('未分类', []).append(new_row)
 
     # 输出分类结果到一个新的 CSV 文件
-    filename = 'data/classified_data.csv'
+    filename = '../data/classified_data.csv'
     with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()

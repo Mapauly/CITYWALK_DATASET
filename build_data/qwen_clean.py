@@ -8,8 +8,8 @@ client = openai.OpenAI(
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
-input_file = 'data/cleaned_notes.csv'
-output_file = 'data/qwen_cleaned_notes.csv'
+input_file = '../data/cleaned_notes.csv'
+output_file = '../data/qwen_cleaned_notes.csv'
 
 def simplify_description(desc):
     try:
