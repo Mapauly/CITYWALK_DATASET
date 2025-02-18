@@ -33,7 +33,7 @@ client = chromadb.Client(Settings(
 # 创建一个集合
 collection = client.create_collection(name="knowledge_base")
 
-input_file = 'classified_data.csv'
+input_file = '../data/classified_data.csv'
 with open(input_file, 'r', encoding='utf-8', newline='') as infile:
     reader = csv.DictReader(infile)
     id_counter = 0

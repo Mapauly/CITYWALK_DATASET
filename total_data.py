@@ -49,7 +49,7 @@ def clean_xhs_notes():
             })
 
         # 将清洗后的数据保存到 CSV 文件
-        with open('cleaned_notes.csv', 'w', newline='', encoding='utf-8') as f:
+        with open('data/cleaned_notes.csv', 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=['title', 'desc', 'tags'])
             writer.writeheader()
             for item in cleaned_data:

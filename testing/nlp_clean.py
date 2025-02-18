@@ -6,8 +6,8 @@ model_name = 'facebook/bart-large-cnn'
 tokenizer = BartTokenizer.from_pretrained(model_name)
 model = BartForConditionalGeneration.from_pretrained(model_name)
 # 定义输入和输出 CSV 文件的路径
-input_file = 'cleaned_notes.csv'
-output_file = 'nlp_cleaned_notes.csv'
+input_file = '../data/cleaned_notes.csv'
+output_file = '../data/nlp_cleaned_notes.csv'
 
 with open(input_file, 'r', encoding='utf-8', newline='') as infile, \
         open(output_file, 'w', encoding='utf-8', newline='') as outfile:

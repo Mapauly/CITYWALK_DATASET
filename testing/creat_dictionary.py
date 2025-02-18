@@ -9,7 +9,7 @@ client = openai.OpenAI(
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
-input_file = 'classified_data.csv'
+input_file = '../data/classified_data.csv'
 knowledge_base = []
 
 def extract_fields(desc):

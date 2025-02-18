@@ -8,7 +8,7 @@ classified_data = {keyword: [] for keyword in keywords}
 
 # 读取 CSV 文件
 try:
-    with open('cleaned_notes.csv', 'r', encoding='utf-8') as csvfile:
+    with open('../data/cleaned_notes.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         # 获取 CSV 文件的字段名
         fieldnames = reader.fieldnames

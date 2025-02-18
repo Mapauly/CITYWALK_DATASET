@@ -14,7 +14,7 @@ kafka_topic = '<citywalk_dataset>'
 
 try:
     # 打开 CSV 文件
-    with open('cleaned_notes.csv', 'r', encoding='utf-8') as f:
+    with open('../data/cleaned_notes.csv', 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         # 逐行读取 CSV 文件内容
         for row in reader:
